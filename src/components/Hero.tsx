@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 import heroBg from "@/assets/hero-bg.jpg";
+import logoHero from "@/assets/logo-hero.png";
 
 const Hero = () => {
   const scrollToContact = () => {
@@ -27,6 +28,15 @@ const Hero = () => {
 
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto text-center">
+          {/* Logo acima do texto */}
+          <div className="mb-8 animate-fade-in">
+            <img 
+              src={logoHero} 
+              alt="PH Assessoria Contábil e Gestão Empresarial" 
+              className="mx-auto w-64 md:w-80 lg:w-96"
+            />
+          </div>
+
           {/* H1 - Company Name */}
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground mb-6 animate-fade-in">
             PH Assessoria Contábil e Gestão Empresarial
