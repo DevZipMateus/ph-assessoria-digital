@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
+import heroBg from "@/assets/hero-bg.jpg";
 
 const Hero = () => {
   const scrollToContact = () => {
@@ -14,9 +15,15 @@ const Hero = () => {
 
   return (
     <section id="hero" className="relative pt-32 pb-20 md:pt-40 md:pb-32 overflow-hidden">
-      {/* Background gradient */}
-      <div className="absolute inset-0 gradient-light -z-10" />
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,hsl(214_95%_45%/0.05),transparent_50%)] -z-10" />
+      {/* Background image */}
+      <div className="absolute inset-0 -z-10">
+        <img 
+          src={heroBg} 
+          alt="Profissional de contabilidade" 
+          className="w-full h-full object-cover"
+        />
+        <div className="absolute inset-0 bg-white/85" />
+      </div>
 
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto text-center">
