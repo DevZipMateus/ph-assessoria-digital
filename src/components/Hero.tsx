@@ -82,7 +82,7 @@ const Hero = () => {
           </div>
 
           {/* Trust indicators */}
-          <div className="mt-16 grid grid-cols-1 md:grid-cols-3 gap-8 animate-fade-in">
+          <div className="mt-16 grid grid-cols-1 md:grid-cols-2 gap-8 animate-fade-in">
             <div className="text-center">
               <div className="text-3xl font-bold text-primary mb-2">8+</div>
               <div className="text-sm text-muted-foreground">Anos de experiência</div>
@@ -90,10 +90,6 @@ const Hero = () => {
             <div className="text-center">
               <div className="text-3xl font-bold text-primary mb-2">100%</div>
               <div className="text-sm text-muted-foreground">Foco no cliente</div>
-            </div>
-            <div className="text-center">
-              <div className="text-3xl font-bold text-primary mb-2">24/7</div>
-              <div className="text-sm text-muted-foreground">Suporte próximo</div>
             </div>
           </div>
         </div>
